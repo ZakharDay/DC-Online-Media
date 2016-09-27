@@ -1,24 +1,20 @@
 body {
-  margin: 0;
+  margin: 0 0 30px 0;
   font-family: 'PT Sans', sans-serif;
-  /*background-image: url(../images/dc-online-media-mockup.jpg);*/
-  /*background-size: 800px 20624px;*/
-  /*background-position: top center;*/
-  /*background-repeat: no-repeat;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-section {
+a {
+  color: inherit;
+}
+
+h1, h2, h3, p, ul, blockquote {
   width: 700px;
   margin: 0 auto;
 }
 
-img {
-  display: block;
-  width: 1020px;
-  margin: 66px auto;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: bold;
 }
@@ -48,9 +44,17 @@ h2 {
   color: rgba(0,0,0,.8);
 }
 
+h2 + h3 {
+  margin-top: 38px;
+}
+
 h2 + p,
 h2 + blockquote {
   margin-top: 7px;
+}
+
+h2 + ul {
+  margin-top: 31px;
 }
 
 h3 {
@@ -107,7 +111,8 @@ blockquote + p {
 }
 
 ul {
-  margin: 29px 0;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 li {
@@ -123,11 +128,16 @@ li:before {
   color: rgba(0,0,0,.8);
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
+img {
+  display: block;
+  width: 1020px;
+  margin: 80px auto;
 }
 
-a:visited {
-  color: #000000;
+img + h2 {
+  margin-top: -1px;
+}
+
+img + p {
+  margin-top: -3px;
 }
