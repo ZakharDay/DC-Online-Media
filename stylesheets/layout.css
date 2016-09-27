@@ -93,9 +93,10 @@ blockquote {
   font-style: italic;
 }
 
-blockquote:before {
-  content: "\0020";
+blockquote::before {
+  content: '';
   position: absolute;
+  display: block;
   top: 0;
   bottom: 0;
   left: -20px;
@@ -113,19 +114,11 @@ blockquote + p {
 ul {
   margin-top: 29px;
   margin-bottom: 29px;
+  list-style-type: disc;
 }
 
 li {
   margin: 17px 0 17px 30px;
-}
-
-li:before {
-  content: "\2022";
-  position: absolute;
-  width: 16px;
-  margin-left: -30px;
-  text-align: right;
-  color: rgba(0,0,0,.8);
 }
 
 img {
