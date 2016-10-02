@@ -112,8 +112,7 @@ blockquote + p {
 }
 
 ul {
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin: 29px auto;
   list-style-type: disc;
 }
 
@@ -131,6 +130,16 @@ img + h2 {
   margin-top: -1px;
 }
 
-img + p {
+img + p,
+img + blockquote,
+img + ul {
   margin-top: -3px;
+}
+
+h2 + img {
+  margin-top: 82px;
+}
+
+h3 + img {
+  margin-top: 81px;
 }
