@@ -1,0 +1,47 @@
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  padding: 13px 30px 15px;
+  opacity: .1;
+  transition: all .1s ease-out;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav > ul {
+  position: absolute;
+  width: 240px;
+}
+
+nav li {
+  margin: 12px 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  color: rgba(0,0,0,.8);
+}
+
+nav li:hover {
+  color: rgba(0,0,0,.8);
+}
+
+nav > ul > li:first-child {
+  font-weight: bold;
+}
+
+nav > ul > li > ul li {
+  margin-left: 10px;
+  color: rgba(0,0,0,.4);
+}
+
+nav > ul > li > ul li {
+  color: rgba(0,0,0,.6);
+}
