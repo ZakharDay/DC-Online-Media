@@ -13,10 +13,6 @@
   opacity: 1;
 }
 
-.sidebar a {
-  text-decoration: none;
-}
-
 .sidebar > ul {
   position: absolute;
   width: 240px;
