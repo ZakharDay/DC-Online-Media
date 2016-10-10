@@ -11,7 +11,7 @@
   width: 180px;
   height: 16px;
   background-image: url(../images/wikimedium_logo.svg);
-  background-size: cover;
+  background-size: 180px 16px;
 }
 
 .about {
