@@ -7,7 +7,7 @@ article a {
   text-decoration: underline;
 }
 
-article > * {
+article > *:not(section) {
   width: 708px;
   margin: 0 auto;
 }
@@ -122,26 +122,32 @@ article li {
   margin: 17px 0 17px 30px;
 }
 
-article img {
+article > img {
   display: block;
   width: 1020px;
   margin: 80px auto;
 }
 
-article img + h2 {
+article > img + h2,
+article > .gallery + h2 {
   margin-top: -1px;
 }
 
-article img + p,
-article img + blockquote,
-article img + ul {
+article > img + p,
+article > img + blockquote,
+article > img + ul,
+article > .gallery + p,
+article > .gallery + blockquote,
+article > .gallery + ul {
   margin-top: -3px;
 }
 
-article h2 + img {
+article h2 + img,
+article h2 + .gallery {
   margin-top: 82px;
 }
 
-article h3 + img {
+article h3 + img,
+article h3 + .gallery {
   margin-top: 81px;
 }
